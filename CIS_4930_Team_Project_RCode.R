@@ -98,26 +98,6 @@ cvd.df <- cvd_cleaned
 cvd.df
 
 
-# performing  Correlation Analysis to 
-# Correlation Analysis
-# ... (Continuation of your previous code)
-
-# Perform correlation analysis
-# Perform correlation analysis
-correlation_matrix <- cor(cvd.df)
-
-# Load necessary libraries for visualization
-library(corrplot)  # For plotting correlation matrix
-
-# Visualization: Heatmap of correlation matrix
-corrplot(correlation_matrix, method = "color", 
-         type = "upper",        # Show upper triangle of the correlation matrix
-         order = "hclust",     # Order variables using hierarchical clustering
-         col = colorRampPalette(c("blue", "white", "red"))(100),  # Color palette
-         addCoef.col = "black",  # Color of coefficients
-         tl.col = "black",       # Color of text labels
-         tl.srt = 45,            # Rotate text labels
-         title = "Correlation Heatmap")  # Title of the heatmap
 
 library(caret)
 library(jtools)
